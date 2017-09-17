@@ -33,7 +33,8 @@ def main():
     addr_counter = count(0)
     data_lines = [
         datum_template.format(next(addr_counter), c) for r in mat_a for c in r]
-    fout.write(header_template.format(4096) + "\n".join(data_lines))
+    fout.write(header_template.format(4096) + "\n".join(data_lines)
+               + footer_template)
 
   with open(args.mat_b, "w") as fout:
     addr_counter = count(0)
