@@ -60,4 +60,4 @@ clean :
 	-rm matA.mif
 	-rm matB.mif
 
-.PHONY : mat1 mat2 gen .cp_mat1 .cp_mat2 .cp_mat_gen
+.PHONY : mat1 mat2 mat_gen .cp_mat1 .cp_mat2 .cp_mat_gen clean
